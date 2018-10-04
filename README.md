@@ -1,2 +1,2 @@
 # 2018-Project-18
-Intensions prediction. Decoding brain signals for neurocomputer interface.
+Optimal Signal Decoding Model for Brain Computer Interface.
