@@ -12,18 +12,21 @@
 \organization
     {МФТИ (ГУ)}
 \abstract
-    {Нейрокомпьютерный интерфейс позволяет помочь людям с ограниченными возможностями вернуть их мобильность. По имеющемуся описанию сигнала прибора можно смоделировать поведение субъекта. В данной работе построена единая система, решающая задачу декодирования сигналов. В качестве этапов построения такой системы были решены задачи предобработки данных, выделения признакового пространства, снижения размерности и выбора модели оптимальной сложности. В работе учитывается комплексная природа сигнала: непрерывная траектория движения, наличие дискретных структурных переменных, наличие непрерывных переменных.}
-
-\titleEng
-    [Short title]
-    {Prediction of intentions. Building an optimal model for decoding signals when modeling a brain-computer interface.}
-\authorEng
-    {N.\,D.~Sukhodolskiy}
-\organizationEng
-    {Moscow Institute of Physics and Technology}
-\abstractEng
-    {The brain-computer interface allows people with disabilities to regain their mobility. Having a description of the signal of the device, it is possible to simulate the behavior of the subject. In this paper, a unified system is constructed that solves the problem of decoding signals. As stages of building such a system, the tasks of data preprocessing, selection of attribute space, reduction of dimensionality and choice of a model of optimal complexity were solved. The work takes into account the complex nature of the signal: continuous trajectory of motion, the presence of discrete structural variables, the presence of continuous variables.}
+    {В данной работе по имеющемуся описанию ECoG сигнала прибора моделируется поведение субъекта. В работе предлагается построить систему, решающую задачу декодирования сигналов. В качестве этапов построения такой системы решаются задачи предобработки данных, выделения признакового пространства и снижения размерности. Помимо этого, внимание уделяется выбору модели оптимальной сложности. В работе учитывается комплексная природа сигнала: непрерывная траектория движения, наличие дискретных структурных переменных, наличие непрерывных переменных.}
 
 \maketitle
+\linenumbers
+
+\section{Введение}
+    {Нейрокомпьютерный интерфейс (BCI) осуществляет обмен информацией между мозгом и электронным устройством. Одним из применений этой технологии является помощь людям с ограниченными возможностями в возвращении их мобильности.
+    
+    При решении подобных задач данные мозга часто получают используя электро- и магнитоэнцефалографию (EEG и MEG соответственно) \cite{Waldert2008}. В данной работе используются данные, полученые с помощью электрокортикографии (ECoG), которая позволяет получить измерения с большим разрешением во временной и пространственной областях. Имеются работы, в которых ECoG применяется для определения движения, выполняемого субъектом, например, движения руки \cite{Chao2010}.
+
+Построение модели также требует снижения размерности признакового пространства. В данной работе используются метод наименьщих частных квадратов (Partial Least Squares) \cite{Krishnan2011}, используемый в современных исследованиях по этой тематике \cite{Eliseyev2011} \cite{Eliseyev2012} и метод главных компонент (Principal Component Analysis) \cite{Brems2017}
+
+В построенной модели учитывается комплексная природа сигнала. Приняты во внимание непрерывная траектория движения, наличие дискретных структурных переменных и непрерывных переменных. Исследование проводится на основе данных из библиотеки сигналов человеческого мозга ECoG \cite{Data2016}. 
+}
+\bibliographystyle{plain}
+\bibliography{Sukhodolskiy2018Project18}
 
 \end{document}
